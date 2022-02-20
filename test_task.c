@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int input();
 void fill_sort_output(int x);
@@ -7,6 +8,7 @@ void sort(int **arr, int i, int y);
 void output(int **arr, int i, int y);
 
 int main(void) {
+  srand(time(NULL));
   fill_sort_output(input());
 }
 
